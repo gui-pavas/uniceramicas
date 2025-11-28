@@ -23,12 +23,13 @@
     "erasableSyntaxOnly": true,
     "noFallthroughCasesInSwitch": true,
     "noUncheckedSideEffectImports": true,
+    /* Alias também aqui, pra Vite/config/etc */
     "baseUrl": ".",
     "paths": {
       "@/*": [
         "src/*"
       ]
-    },
+    }
   },
   "include": [
     "vite.config.ts"

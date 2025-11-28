@@ -201,3 +201,9 @@
   --shadow-xl: var(--shadow-xl);
   --shadow-2xl: var(--shadow-2xl);
 }
+
+@layer base {
+  html {
+    @apply scroll-smooth;
+  }
+}
