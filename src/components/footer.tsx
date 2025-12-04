@@ -7,12 +7,12 @@ export default function Footer() {
 
     return (
         <motion.footer
-            className="w-full bg-gradient-to-b from-slate-50 via-white to-slate-50 text-slate-800 border-t border-slate-200"
+            className="w-full bg-linear-to-b from-slate-50 via-white to-slate-50 text-slate-800 border-t border-slate-200"
             initial={{ opacity: 0, y: 24 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, amount: 0.2 }}
             transition={{ duration: 0.5 }}
-            id="contatct"
+            id="contact"
         >
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 lg:py-14">
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-14 items-stretch">

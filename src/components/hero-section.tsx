@@ -3,6 +3,7 @@ import { ArrowRight, Phone, Building2, CheckCircle2 } from "lucide-react"
 import hs_background from "../assets/HS-background.jpg"
 import Logo from "../assets/logo600x600.png"
 import { motion, easeOut } from "framer-motion"
+import { Separator } from "@radix-ui/react-separator"
 
 const containerVariants = {
     hidden: { opacity: 0, y: 24 },
@@ -120,9 +121,8 @@ export default function HeroSection() {
                         </Button>
 
                         <Button
-                            variant="outline"
                             size="lg"
-                            className="group px-10 py-7 text-lg font-bold border-2 border-primary text-primary hover:bg-primary hover:text-primary-foreground transition-all duration-300 bg-transparent"
+                            className="group px-10 py-7 text-lg font-bold text-primary hover:bg-primary hover:text-primary-foreground transition-all duration-300 bg-white"
                             asChild
                         >
                             <a href="tel:11940238363">
@@ -141,12 +141,10 @@ export default function HeroSection() {
                             <CheckCircle2 className="w-5 h-5 text-primary" />
                             <span className="font-bold">Venda Direta da Fábrica</span>
                         </div>
-                        <div className="hidden sm:block w-px h-5 bg-border" />
                         <div className="flex items-center gap-2 text-sm font-medium">
                             <CheckCircle2 className="w-5 h-5 text-primary" />
                             <span className="font-bold">Atendimento Personalizado</span>
                         </div>
-                        <div className="hidden sm:block w-px h-5 bg-border" />
                         <div className="flex items-center gap-2 text-sm font-medium">
                             <CheckCircle2 className="w-5 h-5 text-primary" />
                             <span className="font-bold">Acompanhamento Especializado</span>

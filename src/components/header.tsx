@@ -1,8 +1,24 @@
-import { Link } from 'react-router-dom'
+import React, { useEffect } from 'react'
+import { Link, useLocation } from 'react-router-dom'
 import Logo from '../assets/logo600x600.png'
 
 export default function Header() {
-  const navItems = ['Home', 'Sobre nós', 'Produtos', 'Contato']
+  const navItems = ['Home', 'Sobre nós', 'Produtos', 'Contato', 'Blog']
+  const location = useLocation()
+
+  useEffect(() => {
+    if (location.pathname === '/products') {
+      window.scrollTo({ top: 0, left: 0, behavior: 'auto' })
+    }
+
+  }, [location.pathname])
+
+  const handleAnchorClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
+    if (location.pathname === '/products') {
+      e.preventDefault()
+      window.location.href = `/${href}`
+    }
+  }
 
   return (
     <header className='flex w-full fixed top-0 left-0 z-50 bg-white shadow-md px-12 py-4'>
@@ -16,7 +32,7 @@ export default function Header() {
                 item === 'Sobre nós' ? '#about' :
                 item === 'Produtos' ? '/products' :
                 item === 'Contato' ? '#contact' :
-                '/'
+                item === 'Blog' ? '/blog' : '/'
 
               const isAnchor = href.startsWith('#')
 
@@ -25,6 +41,7 @@ export default function Header() {
                   <a
                     key={index}
                     href={href}
+                    onClick={(e) => handleAnchorClick(e, href)}
                     className='relative cursor-pointer group'
                   >
                     <span className="relative z-10">{item}</span>

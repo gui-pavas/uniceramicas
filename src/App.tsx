@@ -1,35 +1,47 @@
-import type React from "react"
-import { BrowserRouter, Routes, Route } from "react-router-dom"
+// src/router.tsx
+import React from "react"
+import { BrowserRouter, Routes, Route as RouterRoute } from "react-router-dom"
 
 import HomePage from "@/routes/home-page"
-import ProductsPage from "./routes/products-page"
+import ProductsPage from "@/routes/products-page"
+import BlogPage from "@/routes/blog-page"
+import BlogPostPage from "@/routes/blog-post-page"
 
-interface Route {
-    path: string,
+interface AppRoute {
+    path: string
     element: React.ReactNode
 }
 
-export default function Router() {
-
-    const routes: Route[] = [
+export default function AppRouter() {
+    const appRoutes: AppRoute[] = [
         {
-            path: '/',
+            path: "/",
             element: <HomePage />,
         },
         {
-            path: '/products',
-            element: <ProductsPage />
-        }
+            path: "/products",
+            element: <ProductsPage />,
+        },
+        {
+            path: "/blog",
+            element: <BlogPage />,
+        },
+        {
+            path: "/blog/:slug",
+            element: <BlogPostPage />,
+        },
     ]
 
     return (
         <BrowserRouter>
             <Routes>
-                {
-                    routes.map((route, index) => (
-                        <Route key={index} path={route.path} element={route.element} />
-                    ))
-                }
+                {appRoutes.map((route) => (
+                    <RouterRoute
+                        key={route.path}
+                        path={route.path}
+                        element={route.element}
+                    />
+                ))}
             </Routes>
         </BrowserRouter>
     )
