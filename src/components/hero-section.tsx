@@ -3,7 +3,6 @@ import { ArrowRight, Phone, Building2, CheckCircle2 } from "lucide-react"
 import hs_background from "../assets/HS-background.jpg"
 import Logo from "../assets/logo600x600.png"
 import { motion, easeOut } from "framer-motion"
-import { Separator } from "@radix-ui/react-separator"
 
 const containerVariants = {
     hidden: { opacity: 0, y: 24 },
