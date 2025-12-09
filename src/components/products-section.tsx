@@ -85,7 +85,7 @@ export default function ProductsSection() {
 
     return (
         <motion.div
-            className="w-full bg-linear-to-b from-white to-primary/5 py-20 px-4"
+            className="w-full bg-linear-to-b from-white to-primary/5 py-12 sm:py-16 md:py-20 px-4 sm:px-6 lg:px-8"
             variants={sectionVariants}
             initial="hidden"
             whileInView="visible"
@@ -112,7 +112,7 @@ export default function ProductsSection() {
 
                 {/* Grid de produtos */}
                 <motion.div
-                    className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12"
+                    className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 mb-12"
                     variants={gridVariants}
                 >
                     {products.map((product) => (
@@ -125,8 +125,8 @@ export default function ProductsSection() {
                         >
                             <div className="absolute inset-0 bg-linear-to-br from-primary/5 via-transparent to-primary/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
 
-                            <div className="relative p-6 flex flex-col items-center text-center h-full">
-                                <div className="w-full aspect-square mb-6 flex items-center justify-center bg-linear-to-br from-primary/5 to-primary/10 rounded-xl p-8 group-hover:scale-105 transition-transform duration-500">
+                            <div className="relative p-4 sm:p-6 flex flex-col items-center text-center h-full">
+                                <div className="w-full max-w-[220px] aspect-square mb-6 flex items-center justify-center bg-linear-to-br from-primary/5 to-primary/10 rounded-xl p-6 sm:p-8 group-hover:scale-105 transition-transform duration-500">
                                     <img
                                         src={product.image || "/placeholder.svg"}
                                         alt={product.name}
@@ -134,11 +134,11 @@ export default function ProductsSection() {
                                     />
                                 </div>
 
-                                <h3 className="text-xl font-bold text-foreground mb-3 group-hover:text-primary transition-colors">
+                                <h3 className="text-lg sm:text-xl font-bold text-foreground mb-3 group-hover:text-primary transition-colors">
                                     {product.name}
                                 </h3>
 
-                                <p className="text-sm text-muted-foreground mb-4 leading-relaxed">
+                                <p className="text-sm sm:text-base text-muted-foreground mb-4 leading-relaxed">
                                     {product.description}
                                 </p>
 
@@ -146,7 +146,7 @@ export default function ProductsSection() {
                                     {product.features.map((feature) => (
                                         <span
                                             key={feature}
-                                            className="px-3 py-1 bg-primary/10 text-primary text-xs font-semibold rounded-full"
+                                            className="px-3 py-1 bg-primary/10 text-primary text-xs sm:text-sm font-semibold rounded-full"
                                         >
                                             {feature}
                                         </span>
@@ -155,7 +155,7 @@ export default function ProductsSection() {
 
                                 <Button
                                     variant="outline"
-                                    className="w-full mt-auto group/btn border-2 border-primary text-primary hover:bg-primary hover:text-primary-foreground transition-all duration-300 bg-transparent"
+                                    className="w-full sm:w-auto mt-auto group/btn border-2 border-primary text-primary hover:bg-primary hover:text-primary-foreground transition-all duration-300 bg-transparent"
                                     onClick={() => navigate("/products")}
                                 >
                                     Ver Detalhes
@@ -163,7 +163,7 @@ export default function ProductsSection() {
                                 </Button>
                             </div>
 
-                            <div className="absolute top-4 right-4 w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                            <div className="hidden sm:flex absolute top-4 right-4 w-12 h-12 bg-primary/10 rounded-full items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-500">
                                 <TrendingUp className="w-6 h-6 text-primary" />
                             </div>
                         </motion.div>
@@ -172,7 +172,7 @@ export default function ProductsSection() {
 
                 {/* CTA final */}
                 <motion.div
-                    className="text-center bg-linear-to-br from-primary to-primary/80 rounded-2xl p-8 md:p-12 text-white shadow-xl"
+                    className="text-center bg-linear-to-br from-primary to-primary/80 rounded-2xl p-6 sm:p-8 md:p-12 text-white shadow-xl"
                     variants={ctaVariants}
                 >
                     <h3 className="text-2xl md:text-3xl font-bold mb-4">
@@ -184,7 +184,7 @@ export default function ProductsSection() {
                     <Button
                         size="lg"
                         variant="secondary"
-                        className="px-10 py-6 text-lg font-bold shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105"
+                        className="w-full sm:w-auto px-10 py-6 text-lg font-bold shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105"
                         onClick={() => { navigate('https://w.app/uniceramicas') }}
                     >
                         Falar com Especialista
