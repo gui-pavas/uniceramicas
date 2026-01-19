@@ -6,7 +6,9 @@ export type Product = {
   resistance: string
   weight: string
   line: string
-  category: string
+  category: string,
+  subcategory: string,
+  function: string
 }
 
 export type Subcategory = {

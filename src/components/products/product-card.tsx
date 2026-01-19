@@ -7,7 +7,7 @@ type ProductCardProps = {
 export default function ProductCard({ product }: ProductCardProps) {
     return (
         <div className="bg-card border border-border hover:border-primary/70 transition-colors group rounded-xl overflow-hidden">
-            <div className="aspect-square bg-muted p-6 sm:p-8 flex items-center justify-center overflow-hidden">
+            <div className="aspect-square bg-muted flex items-center justify-center overflow-hidden">
                 <img
                     src={product.image || "/placeholder.svg"}
                     alt={product.name}
@@ -22,10 +22,14 @@ export default function ProductCard({ product }: ProductCardProps) {
                     <p className="text-muted-foreground">
                         <span className="font-medium text-foreground">Medida:</span> {product.measurements}
                     </p>
+                    <p className="text-muted-foreground">
+                        <span className="font-medium text-foreground">Resistência:</span> {product.resistance}
+                    </p>
                 </div>
 
-                <div className="pt-2 sm:pt-3 border-t border-border">
-                    <span className="text-sm font-medium text-primary">{product.line}</span>
+                <div className="pt-2 sm:pt-3 border-t border-border flex flex-col">
+                    <span className="text-sm font-medium text-muted-foreground">Uso: {product.function}</span>
+                    <span className="text-sm font-medium text-primary">{product.line} peças por m²</span>
                 </div>
             </div>
         </div>

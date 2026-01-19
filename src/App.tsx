@@ -5,6 +5,7 @@ import HomePage from "@/routes/home-page"
 import ProductsPage from "@/routes/products-page"
 import BlogPage from "@/routes/blog-page"
 import BlogPostPage from "@/routes/blog-post-page"
+import LandingPage from "@/routes/landing-page"
 
 interface AppRoute {
     path: string
@@ -28,6 +29,10 @@ export default function AppRouter() {
         {
             path: "/blog/:slug",
             element: <BlogPostPage />,
+        },
+        {
+            path: "/landing",
+            element: <LandingPage />,
         },
     ]
 

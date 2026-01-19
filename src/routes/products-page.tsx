@@ -6,6 +6,7 @@ import type { Category, Product } from "@/interfaces/products"
 import ProductsHeader from "@/components/products/products-header"
 import CategorySidebar from "@/components/products/category-sidebar"
 import ProductsMainContent from "@/components/products/products-main-content"
+import { products } from "@/data/products"
 
 export default function ProductsPage() {
     const [selectedCategory, setSelectedCategory] = useState<string>("estrutural")
@@ -14,20 +15,32 @@ export default function ProductsPage() {
 
     const categories: Category[] = [
         // Define categories here
-        { id: "estrutural", name: "Estrutural", subcategories: [] },
+        {
+            id: "estrutural", name: "Estrutural", subcategories: [
+                { id: "linha-09", name: "Linha 09" },
+                { id: "linha-11", name: "Linha 11,5" },
+                { id: "linha-14", name: "Linha 14" },
+                { id: "linha-19", name: "Linha 19" },
+                { id: "linha-29", name: "Linha 29" },
+            ]
+        },
         { id: "acessorios", name: "Acessórios", subcategories: [] },
     ]
 
-    const filteredProducts: Product[] = [
-        {
-            id: "1", name: "Produto 1", image: "", measurements: "", resistance: "", weight: "", line: "",
-            category: ""
-        },
-    ]
+    const filteredProducts: Product[] = products.filter((product) => {
+        if (selectedSubcategory) {
+            return (
+                product.category === selectedCategory &&
+                product.subcategory === selectedSubcategory
+            )
+        }
+
+        return product.category === selectedCategory
+    })
 
     const currentCategory: Category | undefined = categories.find((cat) => cat.id === selectedCategory)
 
-    const displayTitle: string = "Título Exibido"
+    const displayTitle: string = "Blocos Cerâmicos"
 
     const handleCategoryClick = (categoryId: string) => {
         setSelectedCategory(categoryId)
