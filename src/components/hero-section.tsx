@@ -3,6 +3,7 @@ import { ArrowRight, Phone, Building2, CheckCircle2 } from "lucide-react"
 import hs_background from "../assets/HS-background.jpg"
 import Logo from "../assets/logo600x600.png"
 import { motion, easeOut } from "framer-motion"
+import { Link } from "react-router-dom"
 
 const containerVariants = {
     hidden: { opacity: 0, y: 24 },
@@ -121,13 +122,13 @@ export default function HeroSection() {
 
                         <Button
                             size="lg"
-                            className="group px-10 py-7 text-lg font-bold text-primary hover:bg-primary hover:text-primary-foreground transition-all duration-300 bg-white"
+                            className="group px-10 py-7 text-lg font-bold bg-white text-primary hover:bg-neutral-200 hover:text-primary/80 transition-all duration-300 "
                             asChild
                         >
-                            <a href="tel:11940238363">
+                            <Link to="https://wa.me/5511940238363?text=Olá, vim do site e gostaria de fazer um orçamento." target="_blank">
                                 <Phone className="mr-2 w-5 h-5 group-hover:rotate-12 transition-transform" />
                                 (11) 94023-8363
-                            </a>
+                            </Link>
                         </Button>
                     </motion.div>
 
@@ -138,15 +139,15 @@ export default function HeroSection() {
                     >
                         <div className="flex items-center gap-2 text-sm font-medium">
                             <CheckCircle2 className="w-5 h-5 text-primary" />
-                            <span className="font-bold">Venda Direta da Fábrica</span>
+                            <span className="font-bold text-neutral-800/90">Venda Direta da Fábrica</span>
                         </div>
                         <div className="flex items-center gap-2 text-sm font-medium">
                             <CheckCircle2 className="w-5 h-5 text-primary" />
-                            <span className="font-bold">Atendimento Personalizado</span>
+                            <span className="font-bold text-neutral-800/90">Atendimento Personalizado</span>
                         </div>
                         <div className="flex items-center gap-2 text-sm font-medium">
                             <CheckCircle2 className="w-5 h-5 text-primary" />
-                            <span className="font-bold">Acompanhamento Especializado</span>
+                            <span className="font-bold text-neutral-800/90">Acompanhamento Especializado</span>
                         </div>
                     </motion.div>
                 </motion.div>

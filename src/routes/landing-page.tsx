@@ -81,7 +81,7 @@ export default function LandingPage() {
 
                     <Button size="lg" className="gap-2 text-lg">
                         <Link
-                            to="https://wa.me/5511972231780?text=Olá, vim do site e gostaria de fazer um orçamento."
+                            to="https://wa.me/5511940238363?text=Olá, vim do site e gostaria de fazer um orçamento."
                             target="_blank"
                             rel="noopener noreferrer"
                             className="flex items-center"
@@ -132,7 +132,7 @@ export default function LandingPage() {
                                 <span className="text-neutral-500"><span className="text-primary me-2">•</span> Entrega em todo o estado de São Paulo</span>
                             </p>
                             <Button size="lg" className="gap-2 text-lg mt-5 rounded">
-                                <Link to={"https://wa.me/5511972231780?text=Olá, vim do site e gostaria de fazer um orçamento."}
+                                <Link to={"https://wa.me/5511940238363?text=Olá, vim do site e gostaria de fazer um orçamento."}
                                     target="_blank" rel="noopener noreferrer" className="flex items-center">
                                     Solicitar Orçamento Grátis
                                     <ArrowRight className="h-5 w-5" />
@@ -151,6 +151,7 @@ export default function LandingPage() {
             </section>
 
             {/* Products Section */}
+            <div className="border-t-2 border-t-primary w-[80%] mx-auto"></div>
             <section className="bg-secondary/50 px-4 py-16">
                 <div className="mx-auto max-w-6xl">
                     <h2 className="mb-10 text-center text-3xl font-bold text-foreground">Nossos Produtos</h2>
@@ -164,7 +165,7 @@ export default function LandingPage() {
                                 <img
                                     src={product.image || "/placeholder.svg"}
                                     alt={product.name}
-                                    className="h-40 w-full object-cover"
+                                    className="h-full w-full object-cover"
                                     loading="lazy"
                                 />
                                 <div className="p-4">
@@ -201,7 +202,7 @@ export default function LandingPage() {
                                     <span className="rounded-full bg-card px-3 py-1 text-muted-foreground">Vale do Paraíba</span>
                                 </div>
                                 <Button size="lg" className="gap-2 text-lg mt-5 rounded">
-                                    <Link to={"https://wa.me/5511972231780?text=Olá, vim do site e gostaria de fazer um orçamento."}
+                                    <Link to={"https://wa.me/5511940238363?text=Olá, vim do site e gostaria de fazer um orçamento."}
                                         target="_blank" rel="noopener noreferrer" className="flex items-center">
                                         Solicitar Orçamento Grátis
                                         <ArrowRight className="h-5 w-5" />

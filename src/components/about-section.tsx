@@ -1,5 +1,7 @@
 import { Building2, Users, Award, Target } from "lucide-react"
 
+import aboutUsImage from '@/assets/lpUni.png'
+
 export default function AboutSection() {
     return (
         <div className="w-full bg-background py-20 px-4" id="about">
@@ -12,26 +14,30 @@ export default function AboutSection() {
                             Sobre a <span className="text-[#ff6b35]">Unicerâmicas</span>
                         </h2>
                         <p className="text-lg text-muted-foreground leading-relaxed mb-6">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et
-                            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.
+                            A Unicerâmicas é uma central de vendas especializada em blocos cerâmicos para a construção civil,
+                            oferecendo produtos de alta qualidade para alvenaria estrutural, de vedação e outros tipos de aplicação.
+                            Com foco na venda direta da fábrica, a empresa atende obras de pequeno, médio e grande porte com agilidade
+                            e suporte técnico especializado.
                         </p>
                         <p className="text-lg text-muted-foreground leading-relaxed mb-6">
-                            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
-                            laborum.
+                            Presente no mercado há décadas, a Unicerâmicas tem consolidado sua reputação por fornecer soluções cerâmicas
+                            que unem tecnologia, resistência e precisão dimensional, garantindo mais eficiência e durabilidade nas obras.
+                            A empresa prioriza relacionamento com clientes e parceiros, buscando sempre melhoria contínua no atendimento
+                            e entrega dos produtos.
                         </p>
                         <p className="text-lg text-muted-foreground leading-relaxed">
-                            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam
-                            rem aperiam, eaque ipsa quae ab illo inventore veritatis.
+                            Localizada em Santo André (SP), a Unicerâmicas se destaca pelo compromisso com o setor da construção,
+                            oferecendo uma linha completa de blocos cerâmicos estruturais e de vedação e contribuindo com resultados
+                            sólidos para projeto e obra.
                         </p>
                     </div>
 
                     {/* Right Column - Image Placeholder */}
                     <div className="animate-in fade-in slide-in-from-right-4 duration-700">
-                        <div className="aspect-4/3 rounded-2xl bg-muted overflow-hidden">
+                        <div className="aspect-3/3 rounded-2xl bg-muted overflow-hidden">
                             <img
-                                src="/modern-ceramic-factory-building.jpg"
-                                alt="Unicerâmicas facility"
+                                src={aboutUsImage}
+                                alt="Unicerâmicas fachada"
                                 className="w-full h-full object-cover"
                             />
                         </div>
