@@ -6,6 +6,7 @@ import ProductsPage from "@/routes/products-page"
 import BlogPage from "@/routes/blog-page"
 import BlogPostPage from "@/routes/blog-post-page"
 import LandingPage from "@/routes/landing-page"
+import { blogPosts } from "@/data/blog-posts"
 
 interface AppRoute {
     path: string
@@ -26,13 +27,17 @@ export default function AppRouter() {
             path: "/blog",
             element: <BlogPage />,
         },
-        {
-            path: "/blog/:slug",
-            element: <BlogPostPage />,
-        },
+        ...blogPosts.map((post) => ({
+            path: `/blog/${post.slug}`,
+            element: React.createElement(post.component),
+        })),
         {
             path: "/landing",
             element: <LandingPage />,
+        },
+        {
+            path: "/blog/:slug",
+            element: <BlogPostPage />,
         },
     ]
 

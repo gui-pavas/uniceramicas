@@ -69,8 +69,8 @@ export default function BlogPostPage() {
                 )}
 
                 <div className="prose prose-neutral max-w-none dark:prose-invert">
-                    {/* Aqui pode ser markdown, se quiser, por enquanto é apenas uma string */}
-                    <p>{post.content}</p>
+                    <p>{post.excerpt}</p>
+                    <p>Este post possui uma página dedicada e customizável.</p>
                 </div>
             </div>
         </Layout>

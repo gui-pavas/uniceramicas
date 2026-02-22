@@ -69,37 +69,39 @@ export default function BlogPage() {
 
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
                     {filteredPosts.map((post: BlogPost) => (
-                        <Card key={post.id} className="flex flex-col hover:shadow-lg transition-shadow">
-                            <img
-                                src={post.image || "/placeholder.svg"}
-                                alt={post.title}
-                                className="w-full h-48 object-cover rounded-t-lg"
-                            />
-                            <CardHeader>
-                                <div className="flex items-center gap-2 mb-2">
-                                    <Badge variant="secondary">{post.category}</Badge>
-                                    <span className="text-sm text-muted-foreground">
+                        <Link to={`/blog/${post.slug}`} className="">
+                            <Card key={post.id} className="flex flex-col pt-0 gap-0 overflow-hidden hover:shadow-xl transition-shadow h-120">
+                                <img
+                                    src={post.image || "/placeholder.svg"}
+                                    alt={post.title}
+                                    className="w-full h-60 object-cover mb-6"
+                                />
+                                <CardHeader>
+                                    <div className="flex items-center gap-2 mb-2">
+                                        <Badge variant="default">{post.category}</Badge>
+                                        <span className="text-sm text-muted-foreground">
                                         {new Date(post.date).toLocaleDateString("pt-BR", {
                                             year: "numeric",
                                             month: "long",
                                             day: "numeric",
                                         })}
                                     </span>
-                                </div>
-                                <CardTitle className="text-xl text-balance">{post.title}</CardTitle>
-                                <CardDescription className="text-pretty">{post.excerpt}</CardDescription>
-                            </CardHeader>
-                            <CardFooter className="mt-auto">
-                                <div className="flex items-center justify-between w-full">
-                                    <span className="text-sm text-muted-foreground">{post.readTime} de leitura</span>
-                                    <Link to={`/blog/${post.slug}`}>
-                                        <Button variant="ghost" size="sm">
-                                            Ler mais →
-                                        </Button>
-                                    </Link>
-                                </div>
-                            </CardFooter>
-                        </Card>
+                                    </div>
+                                    <CardTitle className="text-xl text-balance">{post.title}</CardTitle>
+                                    <CardDescription className="text-pretty">{post.excerpt}</CardDescription>
+                                </CardHeader>
+                                <CardFooter className="mt-auto">
+                                    <div className="flex items-center justify-between w-full">
+                                        <span className="text-sm text-muted-foreground">{post.readTime} de leitura</span>
+                                        <Link to={`/blog/${post.slug}`}>
+                                            <Button variant="ghost" size="sm" className={"text-orange-800 hover:text-orange-700 duration-300 hover:bg-orange-200/40"}>
+                                                Ler mais →
+                                            </Button>
+                                        </Link>
+                                    </div>
+                                </CardFooter>
+                            </Card>
+                        </Link>
                     ))}
                 </div>
 

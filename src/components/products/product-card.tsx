@@ -25,11 +25,14 @@ export default function ProductCard({ product }: ProductCardProps) {
                     <p className="text-muted-foreground">
                         <span className="font-medium text-foreground">Resistência:</span> {product.resistance}
                     </p>
+                    <p className="text-muted-foreground">
+                        <span className="font-medium text-foreground">Peso:</span> {product.weight}
+                    </p>
                 </div>
 
                 <div className="pt-2 sm:pt-3 border-t border-border flex flex-col">
                     <span className="text-sm font-medium text-muted-foreground">Uso: {product.function}</span>
-                    <span className="text-sm font-medium text-primary">{product.line}</span>
+                    <span className="text-sm font-medium text-primary">Informação: {product.line}</span>
                 </div>
             </div>
         </div>

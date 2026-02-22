@@ -24,6 +24,14 @@ export default function ProductsPage() {
                 { id: "linha-29", name: "Linha 29" },
             ]
         },
+        {
+            id: "baiano", name: "Blocos de Vedação", subcategories: [
+                { id: "linha-09-v", name: "Linha 09" },
+                { id: "linha-11-v", name: "Linha 11,5" },
+                { id: "linha-14-v", name: "Linha 14" },
+                { id: "linha-19-v", name: "Linha 19" },
+            ]
+        },
         { id: "acessorios", name: "Acessórios", subcategories: [] },
     ]
 
@@ -40,7 +48,7 @@ export default function ProductsPage() {
 
     const currentCategory: Category | undefined = categories.find((cat) => cat.id === selectedCategory)
 
-    const displayTitle: string = "Blocos Cerâmicos"
+    const displayTitle: string = currentCategory?.name === 'Estrutural' ? "" : 'Furo Horizontal'
 
     const handleCategoryClick = (categoryId: string) => {
         setSelectedCategory(categoryId)

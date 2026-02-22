@@ -5,47 +5,46 @@ import { Card } from "@/components/ui/card"
 import { CheckCircle2, ArrowRight, MapPin } from "lucide-react"
 import { Link } from "react-router-dom"
 
-// import aboutUs from '@/assets/fachada.jpg'
 import aboutUs from '@/assets/lpUni.png'
-import banner from '@/assets/bannerLP.png'
+import bannerLp from '@/assets/bannerLP.png'
 
-import e14x19x39 from '@/assets/products/estrutural/14/14x19x39.png'
-import e14x19x4 from '@/assets/products/estrutural/14/14x19x4.png'
-import e07x19x39 from '@/assets/products/estrutural/07/7x19x39-.png'
-import e09x19x39 from '@/assets/products/estrutural/09/9x19x39.png'
-import e19x19x39 from '@/assets/products/estrutural/19/19X19X39.png'
-import c11x11x11x39 from '@/assets/products/estrutural/11/c11x11x11x39.png'
+import e14x19x39mpa6 from '@/assets/LP/14x19x39-6mpa.png'
+import e19x19x39 from '@/assets/LP/19X19X39.png'
+import bh14x19x29 from '@/assets/LP/BH-14x19x29.png'
+import bh19x19x39 from '@/assets/LP/BH-19X19X39.png'
+import c14x19x39j from '@/assets/LP/C14x19x39-J.png'
+import c14x19x39u from '@/assets/LP/C14X19X39-U-menor.png'
 
 const products = [
     {
-        name: "Bloco Estrutural 14x19x4",
-        description: "Alta resistência para alvenaria estrutural",
-        image: e14x19x4,
+        name: "Bloco Estrutural 14x19x39 (6 MPa)",
+        description: "Alta resistência para alvenaria estrutural com 6 MPa",
+        image: e14x19x39mpa6,
     },
     {
-        name: "Bloco Estrutural 07x19x39",
-        description: "Ideal para obras de grande porte",
-        image: e07x19x39,
-    },
-    {
-        name: "Bloco de Vedação 9x19x39",
-        description: "Perfeito para paredes internas",
-        image: e09x19x39,
-    },
-    {
-        name: "Bloco de Vedação 14x19x39",
-        description: "Versatilidade e economia",
-        image: e14x19x39,
-    },
-    {
-        name: "Bloco de Vedação 19x19x39",
-        description: "Máximo isolamento térmico",
+        name: "Bloco Estrutural 19x19x39",
+        description: "Ideal para alvenaria estrutural com maior espessura",
         image: e19x19x39,
     },
     {
-        name: "Canaleta Cerâmica c11x11x11x39",
-        description: "Para cintas e vergas estruturais",
-        image: c11x11x11x39,
+        name: "Bloco de Vedação baiano 14x19x29",
+        description: "Indicado para paredes de vedação com bom rendimento",
+        image: bh14x19x29,
+    },
+    {
+        name: "Bloco de Vedação baiano 19x19x39",
+        description: "Vedação com maior espessura, versatilidade e economia",
+        image: bh19x19x39,
+    },
+    {
+        name: "Canaleta J 14x19x39",
+        description: "Peça para amarração, cintas e reforços estruturais",
+        image: c14x19x39j,
+    },
+    {
+        name: "Canaleta U 14x19x39",
+        description: "Canaleta para cintas, vergas e apoio de ferragens",
+        image: c14x19x39u,
     },
 ]
 
@@ -63,7 +62,7 @@ export default function LandingPage() {
                 <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_80%,hsl(var(--primary)/0.1),_transparent_40%)] z-0" />
                 <div className="absolute inset-0 bg-[radial-gradient(circle_at_80%_30%,hsl(var(--accent)/0.1),_transparent_40%)] z-0" /> */}
 
-                <img src={banner} alt="Banner Unicerâmicas" className="absolute inset-0 w-full h-full object-cover object-center opacity-90 z-0" />
+                <img src={bannerLp} alt="Banner Unicerâmicas" className="absolute inset-0 w-full h-full object-cover object-center opacity-90 z-0" />
 
                 {/* Content */}
                 <div className="relative mx-auto max-w-4xl text-center z-10">
