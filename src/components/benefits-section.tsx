@@ -18,7 +18,7 @@ export default function BenefitsSection() {
                         <h3 className="text-xl font-bold mb-2">PRÁTICO, ÁGIL E LIMPO</h3>
                         <ul className="text-sm text-muted-foreground space-y-2 text-left">
                             <li>• Maior produtividade da obra</li>
-                            <li>• Sem rasgos na alvenaria</li>
+                            <li>• Sem cortes na alvenaria</li>
                             <li>• Ferramental reutilizável</li>
                         </ul>
                     </div>

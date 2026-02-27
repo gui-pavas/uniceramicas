@@ -3,11 +3,13 @@ import { Button } from "./ui/button"
 import { useNavigate } from "react-router-dom"
 import { motion, easeInOut } from "framer-motion"
 
+import e14x19x19 from '@/assets/products/estrutural/14/14x19x19.png'
+import b14x19x19 from '@/assets/products/baiano/old/14/BH-14X19X39.png'
+
 const products = [
     {
         name: "Linha Estrutural",
-        image:
-            "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/estrutural-icon-qLPPc6erfaqjwbk8sObuHI1pi66mc1.png",
+        image: e14x19x19,
         description: "Blocos para alvenaria estrutural com alta resistência mecânica",
         features: ["Alta resistência", "Durabilidade", "Econômico"],
     },
@@ -20,18 +22,17 @@ const products = [
     },
     {
         name: "Linha Vedação Furo Horizontal",
-        image:
-            "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/horizontal-QVEBLsqL1Tif8RP14WxVePuYlGX9F3.png",
+        image: b14x19x19,
         description: "Blocos de vedação com furos horizontais para instalações",
         features: ["Versatilidade", "Praticidade", "Acabamento"],
     },
-    {
-        name: "Linha Bloco Top",
-        image:
-            "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/top-YEHE2lIj0qN3dB3icqClJy1G9Bku51.png",
-        description: "Blocos premium com design otimizado para construção rápida",
-        features: ["Produtividade", "Qualidade", "Inovação"],
-    },
+    // {
+    //     name: "Linha Bloco Top",
+    //     image:
+    //         "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/top-YEHE2lIj0qN3dB3icqClJy1G9Bku51.png",
+    //     description: "Blocos premium com design otimizado para construção rápida",
+    //     features: ["Produtividade", "Qualidade", "Inovação"],
+    // },
 ]
 
 const sectionVariants = {
@@ -112,7 +113,7 @@ export default function ProductsSection() {
 
                 {/* Grid de produtos */}
                 <motion.div
-                    className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 mb-12"
+                    className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mb-12"
                     variants={gridVariants}
                 >
                     {products.map((product) => (
@@ -126,11 +127,11 @@ export default function ProductsSection() {
                             <div className="absolute inset-0 bg-linear-to-br from-primary/5 via-transparent to-primary/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
 
                             <div className="relative p-4 sm:p-6 flex flex-col items-center text-center h-full">
-                                <div className="w-full max-w-[220px] aspect-square mb-6 flex items-center justify-center bg-linear-to-br from-primary/5 to-primary/10 rounded-xl p-6 sm:p-8 group-hover:scale-105 transition-transform duration-500">
+                                <div className="w-full max-w-[220px] aspect-square mb-6 flex items-center justify-center rounded-xl p-6 sm:p-8 group-hover:scale-105 transition-transform duration-500">
                                     <img
                                         src={product.image || "/placeholder.svg"}
                                         alt={product.name}
-                                        className="w-full h-full object-contain drop-shadow-xl"
+                                        className="w-full h-full object-contain"
                                     />
                                 </div>
 
@@ -183,12 +184,19 @@ export default function ProductsSection() {
                     </p>
                     <Button
                         size="lg"
+                        asChild
                         variant="secondary"
-                        className="w-full sm:w-auto px-10 py-6 text-lg font-bold shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105"
-                        onClick={() => { navigate('https://w.app/uniceramicas') }}
+                        className="w-full sm:w-auto px-10 py-6 text-lg font-bold shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105 cursor-pointer"
                     >
-                        Falar com Especialista
-                        <ArrowRight className="ml-2 w-5 h-5" />
+                        <a
+                            href="https://wa.me/5511940238363"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="Falar com Especialista no WhatsApp"
+                        >
+                            Falar com Especialista
+                            <ArrowRight className="ml-2 w-5 h-5" />
+                        </a>
                     </Button>
                 </motion.div>
             </div>

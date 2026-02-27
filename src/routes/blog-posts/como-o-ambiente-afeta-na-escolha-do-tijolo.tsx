@@ -7,9 +7,9 @@ import { Button } from "@/components/ui/button"
 import ambientVsTijolo from '@/assets/blog/como-escolher-entre-tijolo-ou-bloco.jpg'
 
 export default function ComoOAmbienteAfetaNaEscolhaDoTijolo() {
-    const pageTitle = "Como o Ambiente Afeta a Escolha do Tijolo | Blog da Uniceramicas"
+    const pageTitle = "Como o Ambiente Afeta a Escolha do Tijolo | Blog da Unicerâmicas"
     const pageDescription =
-        "Saiba como clima, umidade, exposicao e uso do imovel influenciam na escolha do tijolo ideal para obter melhor desempenho e durabilidade."
+        "Saiba como clima, umidade, exposição e uso do imóvel influenciam na escolha do tijolo ideal para obter melhor desempenho e durabilidade."
 
     return (
         <Layout>
@@ -41,7 +41,7 @@ export default function ComoOAmbienteAfetaNaEscolhaDoTijolo() {
                 </div>
 
                 <h1 className="text-3xl md:text-4xl font-bold mb-6 text-balance text-gray-700">
-                    Como o Ambiente Afeta a Escolha do Tijolo na Sua Construcao
+                    Como o Ambiente Afeta a Escolha do Tijolo na Sua Construção
                 </h1>
 
                 <div className="mb-8">
@@ -54,52 +54,52 @@ export default function ComoOAmbienteAfetaNaEscolhaDoTijolo() {
 
                 <article className="space-y-6 text-base leading-7 text-lg text-gray-900">
                     <p>
-                        A escolha do tijolo nao deve ser feita apenas por preco ou disponibilidade. As condicoes do
-                        ambiente influenciam diretamente no conforto, na durabilidade e na manutencao da construcao.
+                        A escolha do tijolo não deve ser feita apenas por preço ou disponibilidade. As condições do
+                        ambiente influenciam diretamente no conforto, na durabilidade e na manutenção da construção.
                     </p>
                     <p>
-                        Clima local, incidencia de sol, umidade e tipo de uso do imovel sao fatores que precisam entrar
-                        na decisao desde o inicio do projeto.
+                        Clima local, incidência de sol, umidade e tipo de uso do imóvel são fatores que precisam entrar
+                        na decisão desde o início do projeto.
                     </p>
 
                     <section className="space-y-3">
-                        <h2 className="text-2xl font-semibold text-gray-800">Clima e conforto termico</h2>
+                        <h2 className="text-2xl font-semibold text-gray-800">Clima e conforto térmico</h2>
                         <p>
-                            Em regioes mais quentes, materiais com melhor desempenho termico ajudam a reduzir ganho de
+                            Em regiões mais quentes, materiais com melhor desempenho térmico ajudam a reduzir ganho de
                             calor e melhoram o conforto interno.
                         </p>
                         <ul className="list-disc pl-6 space-y-2">
-                            <li>Menor variacao de temperatura nos ambientes.</li>
-                            <li>Reducao da dependencia de climatizacao artificial.</li>
-                            <li>Melhor eficiencia energetica do imovel.</li>
+                            <li>Menor variação de temperatura nos ambientes.</li>
+                            <li>Redução da dependência de climatização artificial.</li>
+                            <li>Melhor eficiência energética do imóvel.</li>
                         </ul>
                     </section>
 
                     <section className="space-y-3">
-                        <h2 className="text-2xl font-semibold text-gray-800">Umidade e exposicao</h2>
+                        <h2 className="text-2xl font-semibold text-gray-800">Umidade e exposição</h2>
                         <p>
-                            Ambientes com maior contato com chuva, maresia ou umidade constante exigem solucoes
-                            construtivas compativeis com essa condicao.
+                            Ambientes com maior contato com chuva, maresia ou umidade constante exigem soluções
+                            construtivas compatíveis com essa condição.
                         </p>
                         <ul className="list-disc pl-6 space-y-2">
-                            <li>Escolha correta do bloco conforme aplicacao.</li>
-                            <li>Detalhamento de revestimentos e impermeabilizacao.</li>
-                            <li>Execucao adequada de juntas e acabamentos.</li>
+                            <li>Escolha correta do bloco conforme aplicação.</li>
+                            <li>Detalhamento de revestimentos e impermeabilização.</li>
+                            <li>Execução adequada de juntas e acabamentos.</li>
                         </ul>
                     </section>
 
                     <section className="space-y-3">
-                        <h2 className="text-2xl font-semibold text-gray-800">Uso da edificacao</h2>
+                        <h2 className="text-2xl font-semibold text-gray-800">Uso da edificação</h2>
                         <ul className="list-disc pl-6 space-y-2">
-                            <li>Residencial: equilibrio entre conforto e custo.</li>
+                            <li>Residencial: equilíbrio entre conforto e custo.</li>
                             <li>Comercial: desempenho e produtividade de obra.</li>
-                            <li>Industrial: robustez e resistencia conforme projeto.</li>
+                            <li>Industrial: robustez e resistência conforme projeto.</li>
                         </ul>
                     </section>
 
                     <p>
-                        Quando o ambiente e considerado na escolha do tijolo, a obra ganha em desempenho, vida util e
-                        economia de manutencao. A especificacao certa evita problemas futuros e valoriza o investimento.
+                        Quando o ambiente é considerado na escolha do tijolo, a obra ganha em desempenho, vida útil e
+                        economia de manutenção. A especificação certa evita problemas futuros e valoriza o investimento.
                     </p>
                 </article>
             </div>

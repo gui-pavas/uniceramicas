@@ -53,7 +53,7 @@ export default function AboutSection() {
                         <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-[#ff6b35]/10 flex items-center justify-center">
                             <Building2 className="w-8 h-8 text-[#ff6b35]" strokeWidth={2} />
                         </div>
-                        <h3 className="text-3xl font-bold text-foreground mb-2">25+</h3>
+                        <h3 className="text-3xl font-bold text-foreground mb-2">35+</h3>
                         <p className="text-sm text-muted-foreground">Anos de experiência</p>
                     </div>
 
@@ -64,7 +64,7 @@ export default function AboutSection() {
                         <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-[#ff6b35]/10 flex items-center justify-center">
                             <Users className="w-8 h-8 text-[#ff6b35]" strokeWidth={2} />
                         </div>
-                        <h3 className="text-3xl font-bold text-foreground mb-2">500+</h3>
+                        <h3 className="text-3xl font-bold text-foreground mb-2">15 mil</h3>
                         <p className="text-sm text-muted-foreground">Clientes satisfeitos</p>
                     </div>
 
@@ -75,8 +75,8 @@ export default function AboutSection() {
                         <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-[#ff6b35]/10 flex items-center justify-center">
                             <Award className="w-8 h-8 text-[#ff6b35]" strokeWidth={2} />
                         </div>
-                        <h3 className="text-3xl font-bold text-foreground mb-2">ISO 9001</h3>
-                        <p className="text-sm text-muted-foreground">Certificação de qualidade</p>
+                        <h3 className="text-3xl font-bold text-foreground mb-2">Certificação de qualidade</h3>
+                        <p className="text-sm text-muted-foreground">Fornecedores 100% certificados</p>
                     </div>
 
                     <div

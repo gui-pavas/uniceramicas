@@ -7,9 +7,9 @@ import { Button } from "@/components/ui/button"
 import processoDeProducao from '@/assets/blog/processo-de-producao-de-tijolos.jpg'
 
 export default function ProcessoDeConfeccaoDoTijolo() {
-    const pageTitle = "Como e Feita a Confeccao do Tijolo Ceramico: Etapa por Etapa | Blog da Uniceramicas"
+    const pageTitle = "Como é Feita a Confecção do Tijolo Cerâmico: Etapa por Etapa | Blog da Unicerâmicas"
     const pageDescription =
-        "Conheca o processo de fabricacao do tijolo ceramico, da preparacao da argila a queima em forno, e entenda como cada etapa impacta na qualidade final."
+        "Conheça o processo de fabricação do tijolo cerâmico, da preparação da argila à queima em forno, e entenda como cada etapa impacta na qualidade final."
 
     return (
         <Layout>
@@ -29,7 +29,7 @@ export default function ProcessoDeConfeccaoDoTijolo() {
                 </div>
 
                 <div className="mb-4 flex items-center gap-3 flex-wrap">
-                    <Badge>Tendencias</Badge>
+                    <Badge>Tendências</Badge>
                     <span className="text-sm text-muted-foreground">
                         {new Date("2026-02-22").toLocaleDateString("pt-BR", {
                             year: "numeric",
@@ -41,48 +41,48 @@ export default function ProcessoDeConfeccaoDoTijolo() {
                 </div>
 
                 <h1 className="text-3xl md:text-4xl font-bold mb-6 text-balance text-gray-700">
-                    Processo de Confeccao do Tijolo Ceramico: Da Argila ao Canteiro de Obras
+                    Processo de Confecção do Tijolo Cerâmico: Da Argila ao Canteiro de Obras
                 </h1>
 
                 <div className="mb-8">
                     <img
                         src={processoDeProducao}
-                        alt="Processo de fabricacao do tijolo ceramico"
+                        alt="Processo de fabricação do tijolo cerâmico"
                         className="w-full rounded-lg object-cover max-h-[420px]"
                     />
                 </div>
 
                 <article className="space-y-6 text-base leading-7 text-lg text-gray-900">
                     <p>
-                        A qualidade de um tijolo comeca muito antes da obra. O processo de fabricacao envolve controle
-                        de materia-prima, precisao industrial e monitoramento constante em todas as etapas.
+                        A qualidade de um tijolo começa muito antes da obra. O processo de fabricação envolve controle
+                        de matéria-prima, precisão industrial e monitoramento constante em todas as etapas.
                     </p>
                     <p>
-                        Quando cada fase e bem executada, o resultado e um produto com melhor resistencia, menor indice
+                        Quando cada fase é bem executada, o resultado é um produto com melhor resistência, menor índice
                         de perda e excelente desempenho no assentamento.
                     </p>
 
                     <section className="space-y-3">
-                        <h2 className="text-2xl font-semibold text-gray-800">1. Preparacao da argila</h2>
+                        <h2 className="text-2xl font-semibold text-gray-800">1. Preparação da argila</h2>
                         <p>
-                            A argila passa por selecao, homogeneizacao e ajuste de umidade para garantir consistencia
+                            A argila passa por seleção, homogeneização e ajuste de umidade para garantir consistência
                             no molde.
                         </p>
                         <ul className="list-disc pl-6 space-y-2">
-                            <li>Controle granulometrico.</li>
+                            <li>Controle granulométrico.</li>
                             <li>Retirada de impurezas.</li>
-                            <li>Padronizacao da mistura.</li>
+                            <li>Padronização da mistura.</li>
                         </ul>
                     </section>
 
                     <section className="space-y-3">
                         <h2 className="text-2xl font-semibold text-gray-800">2. Moldagem e corte</h2>
                         <p>
-                            A massa segue para extrusao e corte nas dimensoes especificadas, garantindo repetibilidade
-                            e precisao das pecas.
+                            A massa segue para extrusão e corte nas dimensões especificadas, garantindo repetibilidade
+                            e precisão das peças.
                         </p>
                         <ul className="list-disc pl-6 space-y-2">
-                            <li>Formacao continua dos blocos.</li>
+                            <li>Formação contínua dos blocos.</li>
                             <li>Cortes uniformes.</li>
                             <li>Controle dimensional em linha.</li>
                         </ul>
@@ -92,27 +92,27 @@ export default function ProcessoDeConfeccaoDoTijolo() {
                         <h2 className="text-2xl font-semibold text-gray-800">3. Secagem e queima</h2>
                         <p>
                             A secagem reduz umidade antes da queima. Em seguida, o forno consolida as propriedades
-                            mecanicas e a estabilidade da peca.
+                            mecânicas e a estabilidade da peça.
                         </p>
                         <ul className="list-disc pl-6 space-y-2">
                             <li>Secagem controlada para evitar trincas.</li>
-                            <li>Queima em faixa termica adequada.</li>
+                            <li>Queima em faixa térmica adequada.</li>
                             <li>Resfriamento gradual para manter integridade.</li>
                         </ul>
                     </section>
 
                     <section className="space-y-3">
-                        <h2 className="text-2xl font-semibold text-gray-800">4. Inspecao e expedicao</h2>
+                        <h2 className="text-2xl font-semibold text-gray-800">4. Inspeção e expedição</h2>
                         <ul className="list-disc pl-6 space-y-2">
-                            <li>Verificacao visual e dimensional.</li>
-                            <li>Separacao por lote e paletizacao.</li>
-                            <li>Logistica para entrega com menor risco de avaria.</li>
+                            <li>Verificação visual e dimensional.</li>
+                            <li>Separação por lote e paletização.</li>
+                            <li>Logística para entrega com menor risco de avaria.</li>
                         </ul>
                     </section>
 
                     <p>
-                        Entender esse processo ajuda a escolher melhor o fornecedor. Producao com controle tecnico
-                        significa mais confianca no canteiro e melhor desempenho da alvenaria no longo prazo.
+                        Entender esse processo ajuda a escolher melhor o fornecedor. Produção com controle técnico
+                        significa mais confiança no canteiro e melhor desempenho da alvenaria no longo prazo.
                     </p>
                 </article>
             </div>

@@ -31,8 +31,7 @@ export default function ProductsPage() {
                 { id: "linha-14-v", name: "Linha 14" },
                 { id: "linha-19-v", name: "Linha 19" },
             ]
-        },
-        { id: "acessorios", name: "Acessórios", subcategories: [] },
+        }
     ]
 
     const filteredProducts: Product[] = products.filter((product) => {

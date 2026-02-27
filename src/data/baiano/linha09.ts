@@ -1,5 +1,5 @@
-import b09x19x29 from "@/assets/products/baiano/9/BH-9X19X29.png"
-import b09x19x14 from "@/assets/products/baiano/9/BH-9X19X14.png"
+import b09x19x29 from "@/assets/products/baiano/9/BH-9X19X29X-N.png"
+import b09x19x14 from "@/assets/products/baiano/9/BH-9X19X14-N.png"
 
 export const linhaBaiano09 = [
     {

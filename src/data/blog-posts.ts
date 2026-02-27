@@ -52,10 +52,10 @@ export const blogPosts: BlogPost[] = [
     },
     {
         id: 3,
-        title: "Diferenca entre Tijolo Baiano e Bloco Estrutural",
+        title: "Diferença entre Tijolo Baiano e Bloco Estrutural",
         slug: "diferenca-tijolo-baiano-e-estrutural",
         excerpt:
-            "Entenda as funcoes de cada material e escolha o produto certo para evitar retrabalho e custos extras na obra.",
+            "Entenda as funções de cada material e escolha o produto certo para evitar retrabalho e custos extras na obra.",
         category: "Dicas",
         date: "2026-02-22",
         readTime: "6 min",
@@ -64,10 +64,10 @@ export const blogPosts: BlogPost[] = [
     },
     {
         id: 4,
-        title: "Diferenca entre Bloco de Concreto e Bloco Ceramico",
+        title: "Diferença entre Bloco de Concreto e Bloco Cerâmico",
         slug: "diferenca-bloco-concreto-e-ceramica",
         excerpt:
-            "Compare resistencia, conforto termico e produtividade para decidir entre concreto e ceramica no seu projeto.",
+            "Compare resistência, conforto térmico e produtividade para decidir entre concreto e cerâmica no seu projeto.",
         category: "Dicas",
         date: "2026-02-22",
         readTime: "6 min",
@@ -76,10 +76,10 @@ export const blogPosts: BlogPost[] = [
     },
     {
         id: 5,
-        title: "Processo de Confeccao do Tijolo Ceramico",
+        title: "Processo de Confecção do Tijolo Cerâmico",
         slug: "processo-de-confeccao-do-tijolo",
         excerpt:
-            "Veja as etapas da fabricacao, da argila a expedicao, e como o controle industrial impacta na qualidade final.",
+            "Veja as etapas da fabricação, da argila à expedição, e como o controle industrial impacta na qualidade final.",
         category: "Tendências",
         date: "2026-02-22",
         readTime: "7 min",
@@ -91,7 +91,7 @@ export const blogPosts: BlogPost[] = [
         title: "Como o Ambiente Afeta na Escolha do Tijolo",
         slug: "como-o-ambiente-afeta-na-escolha-do-tijolo",
         excerpt:
-            "Descubra como clima, umidade e uso da edificacao influenciam na escolha do bloco ideal para mais durabilidade.",
+            "Descubra como clima, umidade e uso da edificação influenciam na escolha do bloco ideal para mais durabilidade.",
         category: "Dicas",
         date: "2026-02-22",
         readTime: "5 min",

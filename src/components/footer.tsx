@@ -60,11 +60,11 @@ export default function Footer() {
                                 </div>
                                 <div>
                                     <p className="font-medium text-slate-900">Telefone / WhatsApp</p>
-                                    <a
-                                        href="tel:11940238363"
-                                        className="text-[#FF8C42] hover:text-[#ff7a2e] font-semibold transition-colors"
-                                    >
+                                    <a href="https://wa.me/5511940238363?text=Olá, vim do site e gostaria de fazer um orçamento." className="text-[#FF8C42] hover:text-[#ff7a2e] font-semibold transition-colors block">
                                         (11) 94023-8363
+                                    </a>
+                                    <a href="https://wa.me/551144793210?text=Olá, vim do site e gostaria de fazer um orçamento." className="text-[#FF8C42] hover:text-[#ff7a2e] font-semibold transition-colors">
+                                        (11) 4479-3210
                                     </a>
                                 </div>
                             </div>

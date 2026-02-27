@@ -116,8 +116,11 @@ export default function HeroSection() {
                             size="lg"
                             className="group px-10 py-7 text-lg font-bold shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105 bg-primary hover:bg-primary/90"
                         >
-                            Explorar Produtos
-                            <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
+                            <Link to="/products" className="flex items-center gap-2">
+                                Explorar Produtos
+                                <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
+
+                            </Link>
                         </Button>
 
                         <Button
