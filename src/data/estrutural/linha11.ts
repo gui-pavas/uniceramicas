@@ -2,6 +2,8 @@ import e11x19x39 from '@/assets/products/estrutural/11/11x19x39.png'
 import e11x19x29 from '@/assets/products/estrutural/11/11x19x29.png'
 import e11x19x31 from '@/assets/products/estrutural/11/11x19x31.png'
 import e11x19x19 from '@/assets/products/estrutural/11/11x19x19.jpg'
+import e11x19x04 from '@/assets/products/estrutural/11/11x19x4.png'
+import e11x19x09 from '@/assets/products/estrutural/11/11x19x9.png'
 import e11x19x14 from '@/assets/products/estrutural/11/11x14x14.png'
 import c11x19x39 from '@/assets/products/estrutural/11/c11x19x39.png'
 import c11x7x7x39 from '@/assets/products/estrutural/11/c11x7x7x39.png'
@@ -27,11 +29,11 @@ export const linha11 = [
         category: "estrutural", subcategory: "linha-11", function: "Acessório"
     },
     {
-        id: "13", name: "11,5 x 19 x 04", image: e11x19x19, measurements: "11,5cm x 19cm x 04cm", resistance: "4 Mpa", weight: "1,10kg", line: "Não se aplica",
+        id: "13", name: "11,5 x 19 x 04", image: e11x19x04, measurements: "11,5cm x 19cm x 04cm", resistance: "4 Mpa", weight: "1,10kg", line: "Não se aplica",
         category: "estrutural", subcategory: "linha-11", function: "Acessório"
     },
     {
-        id: "14", name: "11,5 x 19 x 09", image: e11x19x19, measurements: "11,5cm x 19cm x 09cm", resistance: "4 Mpa", weight: "2,10kg", line: "Não se aplica",
+        id: "14", name: "11,5 x 19 x 09", image: e11x19x09, measurements: "11,5cm x 19cm x 09cm", resistance: "4 Mpa", weight: "2,10kg", line: "Não se aplica",
         category: "estrutural", subcategory: "linha-11", function: "Acessório"
     },
     {
