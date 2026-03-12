@@ -8,6 +8,7 @@ import { linhaBaiano09 } from "./baiano/linha09";
 import { linhaBaiano11 } from "./baiano/linha11";
 import { linhaBaiano14 } from "./baiano/linha14";
 import { linhaBaiano19 } from "./baiano/linha19";
+import {linha29} from "@/data/estrutural/linha29.ts";
 
 
 export const products: Product[] = [
@@ -15,6 +16,7 @@ export const products: Product[] = [
     ...linha11,
     ...linha14,
     ...linha19,
+    ...linha29,
     ...linhaBaiano09,
     ...linhaBaiano11,
     ...linhaBaiano14,
