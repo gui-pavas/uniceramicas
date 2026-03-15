@@ -29,7 +29,7 @@ export const linha29 = [
         category: "estrutural", subcategory: "linha-29", function: "Paredes Externas"
     },
     {
-        id: "44", name: "14 x 19 x 4", image: e14x19x44, measurements: "14cm x 19cm x 44cm", resistance: "4 Mpa", weight: "8,80kg", line: "Não se aplica",
+        id: "44", name: "14 x 19 x 44", image: e14x19x44, measurements: "14cm x 19cm x 44cm", resistance: "4 Mpa", weight: "8,80kg", line: "Não se aplica",
         category: "estrutural", subcategory: "linha-29", function: "Acessório"
     },
     {
