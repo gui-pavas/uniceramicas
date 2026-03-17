@@ -93,7 +93,7 @@ export default function LandingPage() {
                     <div className="mt-10 flex flex-wrap items-center justify-center gap-6 text-sm text-white/80">
                         <div className="flex items-center gap-2">
                             <CheckCircle2 className="h-4 w-4 text-primary" />
-                            <span>ISO 9001</span>
+                            <span>Fornecedores Certificados</span>
                         </div>
                         <div className="flex items-center gap-2">
                             <CheckCircle2 className="h-4 w-4 text-primary" />
@@ -151,7 +151,7 @@ export default function LandingPage() {
 
             {/* Products Section */}
             <div className="border-t-2 border-t-primary w-[80%] mx-auto"></div>
-            <section className="bg-secondary/50 px-4 py-16">
+            <section className="bg-secondary/50 px-4 py-16" id={"produtos"}>
                 <div className="mx-auto max-w-6xl">
                     <h2 className="mb-10 text-center text-3xl font-bold text-foreground">Nossos Produtos</h2>
 

@@ -1,5 +1,5 @@
 import React from "react"
-import { BrowserRouter, Routes, Route as RouterRoute } from "react-router-dom"
+import { BrowserRouter, Routes, Route as RouterRoute, useLocation } from "react-router-dom"
 
 import HomePage from "@/routes/home-page"
 import ProductsPage from "@/routes/products-page"
@@ -11,6 +11,50 @@ import { blogPosts } from "@/data/blog-posts"
 interface AppRoute {
     path: string
     element: React.ReactNode
+}
+
+function HashScrollHandler() {
+    const location = useLocation()
+
+    React.useEffect(() => {
+        if (!location.hash) {
+            return
+        }
+
+        const elementId = decodeURIComponent(location.hash.slice(1))
+        let attempts = 0
+        let timeoutId: number | undefined
+
+        const scrollToHash = () => {
+            const element = document.getElementById(elementId)
+
+            if (element) {
+                const headerOffset = 96
+                const top = element.getBoundingClientRect().top + window.scrollY - headerOffset
+
+                window.scrollTo({
+                    top: Math.max(top, 0),
+                    behavior: "auto",
+                })
+                return
+            }
+
+            if (attempts < 10) {
+                attempts += 1
+                timeoutId = window.setTimeout(scrollToHash, 100)
+            }
+        }
+
+        scrollToHash()
+
+        return () => {
+            if (timeoutId !== undefined) {
+                window.clearTimeout(timeoutId)
+            }
+        }
+    }, [location.pathname, location.hash])
+
+    return null
 }
 
 export default function AppRouter() {
@@ -43,6 +87,7 @@ export default function AppRouter() {
 
     return (
         <BrowserRouter>
+            <HashScrollHandler />
             <Routes>
                 {appRoutes.map((route) => (
                     <RouterRoute
