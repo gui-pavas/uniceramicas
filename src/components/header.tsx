@@ -7,7 +7,7 @@ import { Menu, X } from "lucide-react"
 import Logo from "../assets/logo600x600.png"
 
 export default function Header() {
-  const navItems = ["Home", "Sobre nós", "Produtos", "Contato", "Blog"]
+  const navItems = ["Home", "Sobre nós", "Produtos", "Contato", "Blog"] // "Descarga na Obra"
   const location = useLocation()
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
 
@@ -45,6 +45,8 @@ export default function Header() {
                     ? "#about"
                     : item === "Produtos"
                       ? "/products"
+                      : item === "Descarga na Obra"
+                        ? "/descarga-do-caminhao-na-obra"
                       : item === "Contato"
                         ? "#contact"
                         : item === "Blog"
@@ -127,6 +129,8 @@ export default function Header() {
                     ? "#about"
                     : item === "Produtos"
                       ? "/products"
+                      : item === "Descarga na Obra"
+                        ? "/descarga-do-caminhao-na-obra"
                       : item === "Contato"
                         ? "#contact"
                         : item === "Blog"

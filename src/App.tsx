@@ -6,6 +6,7 @@ import ProductsPage from "@/routes/products-page"
 import BlogPage from "@/routes/blog-page"
 import BlogPostPage from "@/routes/blog-post-page"
 import LandingPage from "@/routes/landing-page"
+import DescargaCaminhaoObraPage from "@/routes/descarga-caminhao-obra-page"
 import { blogPosts } from "@/data/blog-posts"
 
 interface AppRoute {
@@ -78,6 +79,10 @@ export default function AppRouter() {
         {
             path: "/landing",
             element: <LandingPage />,
+        },
+        {
+            path: "/descarga-do-caminhao-na-obra",
+            element: <DescargaCaminhaoObraPage />,
         },
         {
             path: "/blog/:slug",
