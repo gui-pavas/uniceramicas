@@ -2,7 +2,7 @@ import Layout from "@/components/layouts/layout"
 import {Helmet} from "react-helmet-async"
 import {Button} from "@/components/ui/button"
 import {Link} from "react-router-dom"
-import {ArrowRight, CheckCircle2, Image as ImageIcon, Truck} from "lucide-react"
+import {ArrowRight, CheckCircle2, Truck} from "lucide-react"
 import descarga from "@/assets/descarga.jpeg";
 
 export default function DescargaCaminhaoObraPage() {
