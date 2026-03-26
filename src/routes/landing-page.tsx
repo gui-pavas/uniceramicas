@@ -80,7 +80,7 @@ export default function LandingPage() {
 
                     <Button size="lg" className="gap-2 text-lg">
                         <Link
-                            to="https://wa.me/5511940238363?text=Olá, vim do site e gostaria de fazer um orçamento."
+                            to="https://wa.me/5511940238363?text=Olá, vim do Google e gostaria de fazer um orçamento."
                             target="_blank"
                             rel="noopener noreferrer"
                             className="flex items-center"
@@ -131,7 +131,7 @@ export default function LandingPage() {
                                 <span className="text-neutral-500"><span className="text-primary me-2">•</span> Entrega em todo o estado de São Paulo</span>
                             </p>
                             <Button size="lg" className="gap-2 text-lg mt-5 rounded">
-                                <Link to={"https://wa.me/5511940238363?text=Olá, vim do site e gostaria de fazer um orçamento."}
+                                <Link to={"https://wa.me/5511940238363?text=Olá, vim do Google e gostaria de fazer um orçamento."}
                                     target="_blank" rel="noopener noreferrer" className="flex items-center">
                                     Solicitar Orçamento Grátis
                                     <ArrowRight className="h-5 w-5" />
@@ -201,7 +201,7 @@ export default function LandingPage() {
                                     <span className="rounded-full bg-card px-3 py-1 text-muted-foreground">Vale do Paraíba</span>
                                 </div>
                                 <Button size="lg" className="gap-2 text-lg mt-5 rounded">
-                                    <Link to={"https://wa.me/5511940238363?text=Olá, vim do site e gostaria de fazer um orçamento."}
+                                    <Link to={"https://wa.me/5511940238363?text=Olá, vim do Google e gostaria de fazer um orçamento."}
                                         target="_blank" rel="noopener noreferrer" className="flex items-center">
                                         Solicitar Orçamento Grátis
                                         <ArrowRight className="h-5 w-5" />
