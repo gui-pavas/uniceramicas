@@ -1,7 +1,6 @@
 import React from "react"
 import { BrowserRouter, Routes, Route as RouterRoute, useLocation } from "react-router-dom"
 
-import HomePage from "@/routes/home-page"
 import ProductsPage from "@/routes/products-page"
 import BlogPage from "@/routes/blog-page"
 import BlogPostPage from "@/routes/blog-post-page"
@@ -9,6 +8,7 @@ import LandingPage from "@/routes/landing-page"
 import DescargaCaminhaoObraPage from "@/routes/descarga-caminhao-obra-page"
 import { blogPosts } from "@/data/blog-posts"
 import LandingPageProPage from "./routes/lading-page-pro"
+import HomePage from "./routes/home-page"
 
 interface AppRoute {
     path: string
