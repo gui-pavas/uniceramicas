@@ -8,6 +8,7 @@ import BlogPostPage from "@/routes/blog-post-page"
 import LandingPage from "@/routes/landing-page"
 import DescargaCaminhaoObraPage from "@/routes/descarga-caminhao-obra-page"
 import { blogPosts } from "@/data/blog-posts"
+import LandingPageProPage from "./routes/lading-page-pro"
 
 interface AppRoute {
     path: string
@@ -79,6 +80,10 @@ export default function AppRouter() {
         {
             path: "/landing",
             element: <LandingPage />,
+        },
+        {
+            path: "/landing/pro",
+            element: <LandingPageProPage />,
         },
         {
             path: "/descarga-do-caminhao-na-obra",
