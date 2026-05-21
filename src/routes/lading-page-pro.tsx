@@ -145,7 +145,7 @@ export default function LandingPageProPage() {
                         <div className="flex flex-col lg:flex-row items-start lg:items-center gap-6 mb-12">
 
                             <Link
-                                to="https://wa.me/5511940238363?text=Olá, vim do Google e gostaria de fazer um orçamento."
+                                to="https://api.whatsapp.com/send?phone=5511940238363&text=Ol%C3%A1%2C%20gostaria%20de%20fazer%20um%20or%C3%A7amento%20na%20Unicer%C3%A2micas%20PRO."
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="bg-green-500 hover:bg-green-400 text-white font-black text-xl px-10 py-5 rounded-2xl shadow-2xl transition-all hover:scale-105"
