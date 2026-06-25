@@ -2,6 +2,7 @@ export type Product = {
   id: string
   name: string
   image: string
+  alt: string
   measurements: string
   resistance: string
   weight: string

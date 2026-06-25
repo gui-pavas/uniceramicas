@@ -1,11 +1,11 @@
-import e09x19X39 from "@/assets/products/estrutural/09/9x19x39.png"
-import e09x19X29 from "@/assets/products/estrutural/09/9x19x29.png"
-import e09x19X19 from "@/assets/products/estrutural/09/9x19x19.png"
-import e09x19X04 from "@/assets/products/estrutural/09/9x19x4.png"
-import e09x19X06 from "@/assets/products/estrutural/09/9x19x6.png"
-import e09x19X09 from "@/assets/products/estrutural/09/9x19x9.jpg"
-import e09x19X14 from "@/assets/products/estrutural/09/9x19x14.png"
-import c09x19x39 from "@/assets/products/estrutural/09/c9x19x39.png"
+import e09x19X39 from "@/assets/blocos-ceramicos/estrutural/09/9x19x39.webp"
+import e09x19X29 from "@/assets/blocos-ceramicos/estrutural/09/9x19x29.webp"
+import e09x19X19 from "@/assets/blocos-ceramicos/estrutural/09/9x19x19.webp"
+import e09x19X04 from "@/assets/blocos-ceramicos/estrutural/09/9x19x4.webp"
+import e09x19X06 from "@/assets/blocos-ceramicos/estrutural/09/9x19x6.webp"
+import e09x19X09 from "@/assets/blocos-ceramicos/estrutural/09/9x19x9.webp"
+import e09x19X14 from "@/assets/blocos-ceramicos/estrutural/09/9x19x14.webp"
+import c09x19x39 from "@/assets/blocos-ceramicos/estrutural/09/c9x19x39.webp"
 
 export const linha09 = [
     {

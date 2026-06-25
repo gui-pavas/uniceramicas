@@ -1,7 +1,8 @@
-import b19x19x39 from "@/assets/products/baiano/19/BH-19X19X39-N.png"
-import b19x19x29 from "@/assets/products/baiano/19/BH-19X19X29-N.png"
-import b19x19x14 from "@/assets/products/baiano/19/BH-19X19X14-N.png"
-import c19x19x39f from "@/assets/products/baiano/19/C-19X19X39-F.png"
+import b19x19x39 from "@/assets/blocos-ceramicos/baiano/19/BH-19X19X39-N.png"
+import b19x19x29 from "@/assets/blocos-ceramicos/baiano/19/BH-19X19X29-N.webp"
+import b19x19x14 from "@/assets/blocos-ceramicos/baiano/19/BH-19X19X14-N.webp"
+import c19x19x29f from "@/assets/blocos-ceramicos/baiano/19/C-19X19X29-F.webp"
+import c19x19x39f from "@/assets/blocos-ceramicos/baiano/19/C-19X19X39-F.webp"
 
 export const linhaBaiano19 = [
     {
@@ -21,7 +22,7 @@ export const linhaBaiano19 = [
         category: "baiano", subcategory: "linha-19-v", function: "Acessório"
     },
     {
-        id: "62", name: "Canaleta - 19 x 19 x 29", image: c19x19x39f, measurements: "19cm x 19cm x 29cm", resistance: "Não se Aplica", weight: "6,830kg", line: "Não se Aplica",
+        id: "62", name: "Canaleta - 19 x 19 x 29", image: c19x19x29f, measurements: "19cm x 19cm x 29cm", resistance: "Não se Aplica", weight: "6,830kg", line: "Não se Aplica",
         category: "baiano", subcategory: "linha-19-v", function: "Acessório"
     },
     {

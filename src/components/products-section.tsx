@@ -3,13 +3,14 @@ import { Button } from "./ui/button"
 import { useNavigate } from "react-router-dom"
 import { motion, easeInOut } from "framer-motion"
 
-import e14x19x19 from '@/assets/products/estrutural/14/14x19x19.png'
-import b14x19x19 from '@/assets/products/baiano/old/14/BH-14X19X39.png'
+import e14x19x19 from '@/assets/blocos-ceramicos/estrutural/14/14x19x19.webp'
+import b14x19x19 from '@/assets/blocos-ceramicos/baiano/old/14/BH-14X19X39.png'
 
 const products = [
     {
         name: "Linha Estrutural",
         image: e14x19x19,
+        alt: "Foto de bloco cerâmico estrutural 14 x 19 x 19",
         description: "Blocos para alvenaria estrutural com alta resistência mecânica",
         features: ["Alta resistência", "Durabilidade", "Econômico"],
     },
@@ -17,12 +18,14 @@ const products = [
         name: "Linha Vedação Furo Vertical",
         image:
             "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/vertical-gbdqs4YMbncS6suXhSpFAfzaIRENgt.png",
+        alt: "Foto de bloco cerâmico de vedação com furo vertical",
         description: "Blocos de vedação com furos verticais para melhor isolamento",
         features: ["Isolamento térmico", "Leveza", "Facilidade"],
     },
     {
         name: "Linha Vedação Furo Horizontal",
         image: b14x19x19,
+        alt: "Foto de bloco cerâmico baiano 14 x 19 x 39 com furo horizontal",
         description: "Blocos de vedação com furos horizontais para instalações",
         features: ["Versatilidade", "Praticidade", "Acabamento"],
     },
@@ -130,7 +133,7 @@ export default function ProductsSection() {
                                 <div className="w-full max-w-[220px] aspect-square mb-6 flex items-center justify-center rounded-xl p-6 sm:p-8 group-hover:scale-105 transition-transform duration-500">
                                     <img
                                         src={product.image || "/placeholder.svg"}
-                                        alt={product.name}
+                                        alt={product.alt}
                                         className="w-full h-full object-contain"
                                     />
                                 </div>

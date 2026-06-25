@@ -10,7 +10,7 @@ export default function ProductCard({ product }: ProductCardProps) {
             <div className="aspect-square bg-card flex items-center justify-center overflow-hidden">
                 <img
                     src={product.image || "/placeholder.svg"}
-                    alt={product.name}
+                    alt={product.alt}
                     className="w-full h-full object-contain group-hover:scale-105 transition-transform duration-300"
                 />
             </div>

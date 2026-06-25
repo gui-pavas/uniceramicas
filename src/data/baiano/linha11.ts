@@ -1,6 +1,7 @@
-import b11x19x29 from "@/assets/products/baiano/11/BH-11X19X29-N.png"
-import b11x19x14 from "@/assets/products/baiano/11/BH-11X19X14-N.png"
-import c11x19x39f from "@/assets/products/baiano/11/C-11X19X39-F.png"
+import b11x19x29 from "@/assets/blocos-ceramicos/baiano/11/BH-11X19X29-N.webp"
+import b11x19x14 from "@/assets/blocos-ceramicos/baiano/11/BH-11X19X14-N.webp"
+import c11x19x29f from "@/assets/blocos-ceramicos/baiano/11/C-11X19X29-F.webp"
+import c11x19x39f from "@/assets/blocos-ceramicos/baiano/11/C-11X19X39-F.webp"
 
 export const linhaBaiano11 = [
     {
@@ -12,7 +13,7 @@ export const linhaBaiano11 = [
         category: "baiano", subcategory: "linha-11-v", function: "Acessório"
     },
     {
-        id: "63", name: "Canaleta - 11,5 x 19 x 29", image: c11x19x39f, measurements: "11,5cm x 19cm x 29cm", resistance: "Não se aplica", weight: "4,69 kg", line: "2,56 peças por metro linear",
+        id: "63", name: "Canaleta - 11,5 x 19 x 29", image: c11x19x29f, measurements: "11,5cm x 19cm x 29cm", resistance: "Não se aplica", weight: "4,69 kg", line: "2,56 peças por metro linear",
         category: "baiano", subcategory: "linha-11-v", function: "Acessório"
     },
     {

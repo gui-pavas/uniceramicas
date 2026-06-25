@@ -1,15 +1,16 @@
-import e11x19x39 from '@/assets/products/estrutural/11/11x19x39.png'
-import e11x19x29 from '@/assets/products/estrutural/11/11x19x29.png'
-import e11x19x31 from '@/assets/products/estrutural/11/11x19x31.png'
-import e11x19x19 from '@/assets/products/estrutural/11/11x19x19.jpg'
-import e11x19x04 from '@/assets/products/estrutural/11/11x19x4.png'
-import e11x19x09 from '@/assets/products/estrutural/11/11x19x9.png'
-import e11x19x14 from '@/assets/products/estrutural/11/11x14x14.png'
-import c11x19x39 from '@/assets/products/estrutural/11/c11x19x39.png'
-import c11x7x7x39 from '@/assets/products/estrutural/11/c11x7x7x39.png'
-import c11x7x19x39 from '@/assets/products/estrutural/11/c11x7x19x39.png'
-import c11x9x19x39 from '@/assets/products/estrutural/11/c11x9x19x39.png'
-import c11x11x19x39 from '@/assets/products/estrutural/11/c11x11x19x39.png'
+import e11x19x39 from '@/assets/blocos-ceramicos/estrutural/11/11x19x39.webp'
+import e11x19x29 from '@/assets/blocos-ceramicos/estrutural/11/11x19x29.webp'
+import e11x19x31 from '@/assets/blocos-ceramicos/estrutural/11/11x19x31.webp'
+import e11x19x19 from '@/assets/blocos-ceramicos/estrutural/11/11x19x19.webp'
+import e11x19x04 from '@/assets/blocos-ceramicos/estrutural/11/11x19x4.webp'
+import e11x19x09 from '@/assets/blocos-ceramicos/estrutural/11/11x19x9.webp'
+import e11x19x14 from '@/assets/blocos-ceramicos/estrutural/11/11x14x14.webp'
+import c11x19x39 from '@/assets/blocos-ceramicos/estrutural/11/c11x19x39.webp'
+import c11x7x7x39 from '@/assets/blocos-ceramicos/estrutural/11/c11x7x7x39.webp'
+import c11x7x19x39 from '@/assets/blocos-ceramicos/estrutural/11/c11x7x19x39.webp'
+import c11x9x19x39 from '@/assets/blocos-ceramicos/estrutural/11/c11x9x19x39.png'
+import c11x11x19x39 from '@/assets/blocos-ceramicos/estrutural/11/c11x11x19x39.png'
+import c11x11x11x39 from '@/assets/blocos-ceramicos/estrutural/11/c11x11x11x39.webp'
 
 export const linha11 = [
     {
@@ -55,7 +56,7 @@ export const linha11 = [
         category: "estrutural", subcategory: "linha-11", function: "Acessório"
     },
     {
-        id: "19", name: "Canaleta - 11,5 x 11 x 11 x 39", image: c11x7x7x39, measurements: "11,5cm x 11cm x 11cm x 39cm", resistance: "Não se aplica", weight: "3,80kg", line: "Modelo Compensador",
+        id: "19", name: "Canaleta - 11,5 x 11 x 11 x 39", image: c11x11x11x39, measurements: "11,5cm x 11cm x 11cm x 39cm", resistance: "Não se aplica", weight: "3,80kg", line: "Modelo Compensador",
         category: "estrutural", subcategory: "linha-11", function: "Acessório"
     },
     {

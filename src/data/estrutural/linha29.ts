@@ -1,7 +1,9 @@
-import e14x19x14 from "@/assets/products/estrutural/29/ES-14X19X14 - SF.png"
-import e14x19x29 from "@/assets/products/estrutural/29/ES-14X19X29 - SF.png"
-import e14x19x44 from "@/assets/products/estrutural/29/ES-14X19X44 - SF.png"
-import e19x19x4 from "@/assets/products/estrutural/19/19x19x4.png"
+import e14x19x14 from "@/assets/blocos-ceramicos/estrutural/29/ES-14X19X14 - SF.webp"
+import e14x19x29 from "@/assets/blocos-ceramicos/estrutural/29/ES-14X19X29 - SF.webp"
+import e14x19x44 from "@/assets/blocos-ceramicos/estrutural/29/ES-14X19X44 - SF.webp"
+import e14x19x4 from "@/assets/blocos-ceramicos/estrutural/14/14x19x4.webp"
+import e14x19x6 from "@/assets/blocos-ceramicos/estrutural/14/14x19x6.png"
+import e14x19x9 from "@/assets/blocos-ceramicos/estrutural/14/14x19x9.webp"
 
 export const linha29 = [
     {
@@ -33,15 +35,15 @@ export const linha29 = [
         category: "estrutural", subcategory: "linha-29", function: "Acessório"
     },
     {
-        id: "46", name: "14 x 19 x 04", image: e19x19x4, measurements: "14cm x 19cm x 04cm", resistance: "4 Mpa", weight: "1,70kg", line: "Não se aplica",
+        id: "46", name: "14 x 19 x 04", image: e14x19x4, measurements: "14cm x 19cm x 04cm", resistance: "4 Mpa", weight: "1,70kg", line: "Não se aplica",
         category: "estrutural", subcategory: "linha-29", function: "Acessório"
     },
     {
-        id: "47", name: "14 x 19 x 06", image: e19x19x4, measurements: "19cm x 19cm x 06cm", resistance: "4 Mpa", weight: "1,90kg", line: "Não se aplica",
+        id: "47", name: "14 x 19 x 06", image: e14x19x6, measurements: "19cm x 19cm x 06cm", resistance: "4 Mpa", weight: "1,90kg", line: "Não se aplica",
         category: "estrutural", subcategory: "linha-29", function: "Acessório"
     },
     {
-        id: "47", name: "14 x 19 x 09", image: e19x19x4, measurements: "19cm x 19cm x 09cm", resistance: "4 Mpa", weight: "2,50kg", line: "Não se aplica",
+        id: "47", name: "14 x 19 x 09", image: e14x19x9, measurements: "19cm x 19cm x 09cm", resistance: "4 Mpa", weight: "2,50kg", line: "Não se aplica",
         category: "estrutural", subcategory: "linha-29", function: "Acessório"
     },
 ]

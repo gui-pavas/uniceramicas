@@ -20,31 +20,37 @@ const products = [
         name: "Bloco Estrutural 14x19x39 (6 MPa)",
         description: "Alta resistência para alvenaria estrutural com 6 MPa",
         image: e14x19x39mpa6,
+        alt: "Foto do bloco cerâmico estrutural 14 x 19 x 39 com resistência de 6 MPa",
     },
     {
         name: "Bloco Estrutural 19x19x39",
         description: "Ideal para alvenaria estrutural com maior espessura",
         image: e19x19x39,
+        alt: "Foto do bloco cerâmico estrutural 19 x 19 x 39",
     },
     {
         name: "Bloco de Vedação baiano 14x19x29",
         description: "Indicado para paredes de vedação com bom rendimento",
         image: bh14x19x29,
+        alt: "Foto do bloco cerâmico baiano 14 x 19 x 29",
     },
     {
         name: "Bloco de Vedação baiano 19x19x39",
         description: "Vedação com maior espessura, versatilidade e economia",
         image: bh19x19x39,
+        alt: "Foto do bloco cerâmico baiano 19 x 19 x 39",
     },
     {
         name: "Canaleta J 14x19x39",
         description: "Peça para amarração, cintas e reforços estruturais",
         image: c14x19x39j,
+        alt: "Foto da canaleta cerâmica modelo J 14 x 19 x 39",
     },
     {
         name: "Canaleta U 14x19x39",
         description: "Canaleta para cintas, vergas e apoio de ferragens",
         image: c14x19x39u,
+        alt: "Foto da canaleta cerâmica modelo U 14 x 19 x 39",
     },
 ]
 
@@ -163,7 +169,7 @@ export default function LandingPage() {
                             >
                                 <img
                                     src={product.image || "/placeholder.svg"}
-                                    alt={product.name}
+                                    alt={product.alt}
                                     className="h-full w-full object-cover"
                                     loading="lazy"
                                 />
