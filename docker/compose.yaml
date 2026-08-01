@@ -1,0 +1,17 @@
+name: uniceramicas
+
+services:
+  web:
+    build:
+      context: ..
+      dockerfile: docker/Dockerfile
+    ports:
+      - "${DEV_PORT:-5102}:5173"
+    environment:
+      CHOKIDAR_USEPOLLING: "true"
+    volumes:
+      - ..:/web
+      - bun_modules:/web/node_modules
+
+volumes:
+  bun_modules:
