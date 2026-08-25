@@ -11,7 +11,7 @@ services:
     labels:
       - traefik.enable=true
       - traefik.docker.network=proxy
-      - traefik.http.routers.uniceramicas.rule=Host(`${APP_DOMAIN}`)
+      - traefik.http.routers.uniceramicas.rule=Host(`${APP_DOMAIN}`) || Host(`www.${APP_DOMAIN}`)
       - traefik.http.routers.uniceramicas.entrypoints=websecure
       - traefik.http.routers.uniceramicas.tls=true
       - traefik.http.routers.uniceramicas.tls.certresolver=letsencrypt
