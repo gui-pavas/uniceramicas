@@ -81,7 +81,7 @@ export default function LandingPage() {
                     </h1>
 
                     <p className="mx-auto mb-8 max-w-2xl text-lg text-white/80 md:text-xl">
-                        Mais de 25 anos fornecendo blocos de alta qualidade para construtoras e obras em todo o Brasil.
+                        Mais de 25 anos fornecendo blocos de alta qualidade para construtoras e obras em todo o Estado de São Paulo.
                     </p>
 
                     <Button size="lg" className="gap-2 text-lg">
